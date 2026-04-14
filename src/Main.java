@@ -1,6 +1,8 @@
 public class Main {
     public static void main(String[] args) {
 
+
+        /*
         System.out.println("=== SISTEMA DE BUSCA EM ARRAY ===\n");
 
         // Array de produtos
@@ -62,5 +64,25 @@ public class Main {
         }
         System.out.println("\n📏 Produto mais curto: " + maisCurto);
         System.out.println("📏 Produto mais longo: " + maisLongo);
+
+         */
+
+        int[] num = new int[4];
+        num[0] = 1;
+        num[1] = 10;
+        num[2] = 100;
+        num[3] = 1000;
+        num[4] = 10000;
+
+        for (int i = 0; i<= num.length; i++){
+            System.out.println(""+ num[i]);
+        }
+
+
+
+
     }
+
+
+
 }
