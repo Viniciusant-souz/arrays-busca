@@ -9,6 +9,8 @@ public class arrays01 {
             System.out.println("Produto no índice " + i + ": " + produtos[i]);
         }
 
+        System.out.println();
+
         String buscar = "Mouse";
         int retornoDaBusca = -1;
 
@@ -26,6 +28,35 @@ public class arrays01 {
         else {
             System.out.println("Produto não encontrado!");
         }
+
+        System.out.println();
+
+        int nOcorrencias = 0;
+
+        for (int i=0; i< produtos.length; i++){
+            if (buscar.equals(produtos[i])){
+                nOcorrencias = nOcorrencias + 1;
+            }
+        }
+
+        System.out.println("O item " + buscar + " aparece " + nOcorrencias + " vezes dentro do array");
+
+        System.out.println();
+
+        System.out.println("O Produto " + buscar + " está nas seguintes posições do índice: ");
+
+        for (int i = 0; i < produtos.length; i++) {
+            if (produtos[i].equals(buscar)){
+                System.out.println("--> " + i);
+            }
+
+        }
+
+
+
+
+
+
 
     }
 }
